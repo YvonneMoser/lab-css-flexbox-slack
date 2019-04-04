@@ -1,3 +1,50 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 /*
 background-grey: #F4F3F4;
 button-purple: #192592
@@ -5,3 +52,207 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+
+
+@media screen and (max-width: 768px){
+
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    clear: both;
+    width: 100%;
+  }
+  
+  nav {
+    order: -1;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    background: white;
+    border-bottom: 1px solid rgba(44, 48, 63, 0.452);
+    
+  }
+
+  nav img {
+    width: 30%;
+    height: 30%;
+    
+  }
+
+  nav li {
+    display: none;
+  }
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px; /*how can i put it to the next position without using margin? with flex column?*/
+  text-align: left;
+  align-items: center;
+  width: 100%;
+}
+
+
+h1{
+
+  color: #2C303F;
+  font-size: 35px;
+  font-weight: bold;
+  margin: 0 15px 15px 15px;
+}
+
+p {
+  margin: 0 15px 15px 15px;
+  line-height: 1.5em;
+  color: #5b5e6d;
+}
+
+button.purple {
+  background-color: #192592;
+  width: 70%;
+  color: rgba(255, 255, 255, 0.795);
+  font-family: Arial, Helvetica, sans-serif;
+  height: 35px;
+  font-size: 15px;
+  border-radius: 7px; 
+}
+
+header p.small {
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+header img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.grey {
+  background-color: #F4F3F4;
+  width: 100%;
+}
+.logo-img {
+  width: 50%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+h2{
+  color: #2C303F;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 20px 15px;
+}
+
+.white-button {
+  background-color: white;
+  width: 70%;
+  color: #192592;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 35px;
+  font-size: 15px;
+  border-radius: 7px; 
+  border: 1px solid;
+}
+
+.boldText {
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.img-logo {
+  width: 150px;
+  margin: -20px;
+  margin-bottom: -50px;
+}
+
+footer {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: space-around;
+
+}
+
+
+.footerflex {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around;
+}
+ 
+footer div.footerflex ul {
+  width: 40%;
+  text-align: left;
+  padding: 20px 10px;
+}
+
+footer div ul li {
+  line-height: 1.5em;
+  color: #5b5e6d;
+}
+
+
+.footerlist2 {
+  background-color: #F4F3F4;
+  height: 100px;;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+   /*the grey background won`t cover the whole screen? Why is there a white border and how can i fix it without using margin?*/
+
+}
+
+.footerlist2 ul {
+  display: flex;
+  align-items: center;
+
+}
+
+.footerlist2 li {
+  padding: 15px;
+  font-size: 15px;
+  color: #5b5e6d;
+}
+
+
+
+ #accounts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#accounts img {
+  width: 25px;
+  margin: 15px;
+}
+
+#footerI {
+   display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+}
+
+#footerI i {
+  padding: 15px;
+}
+
+}
